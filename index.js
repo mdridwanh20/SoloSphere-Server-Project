@@ -216,7 +216,7 @@ async function run() {
     })
 
 
-    // update bid status;
+    // update bid status; fsdf
     app.patch('/bid-status-update/:id', async (req, res) => {
       const id = req.params.id
       const { status } = req.body
@@ -227,6 +227,7 @@ async function run() {
       const result = await bidsCollection.updateOne(filter, updated)
       res.send(result)
     })
+
 
 
 
