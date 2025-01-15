@@ -49,6 +49,7 @@ const verification = (req, res, next) => {
   next()
 }
 
+
 async function run() {
   try {
     // Send a ping to confirm a successful connection
